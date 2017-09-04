@@ -35,9 +35,13 @@
     margin-right: 22px;
     margin-top: 58px;
     margin-bottom: 83px;
+    color: #000000;
+    font-family: $MuSeoSansBold;
+    font-size: 19px;
     &:last-child{
       background: transparent;
       border: 2px solid #ffffff;
+      color: #fff;
     }
   }
   &__absolute{

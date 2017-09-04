@@ -95,12 +95,18 @@
     padding: 10px 0;
     box-sizing: border-box;
     color: #000;
+    transition: 200ms ease;
+    &:hover{
+      color: #fff;
+      transition: 200ms ease;
+    }
     span{
       font-size: 16px;
     }
     .fa{
       color: #000;
       margin-right: 10px;
+      display: inline-block;
     }
   }
   &__content{

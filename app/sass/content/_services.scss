@@ -17,6 +17,9 @@
     h1{
       margin-top: 53px;
       margin-left: 26px;
+      color: #09091e;
+      font-family: $MuSeoSansBlack;
+      font-size: 35px;
     }
     &__item{
       display: block;
@@ -34,10 +37,10 @@
       img{
         width: 100%;
         object-fit: cover;
-        transition: 200ms ease;
+        transition: 400ms ease;
         &:hover{
           transform: scale(1.03);
-          transition: 200ms ease;
+          transition: 400ms ease;
         }
       }
       ul{
