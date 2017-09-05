@@ -3,8 +3,18 @@ $MuSeoSansLight: 'MuseoSansLight';
 $MuSeoSansRegular: 'MuseoSansRegular';
 $MuSeoSansBold: 'MuseoSansBold';
 $MuSeoSansBlack: 'MuseoSansBlack';
+$Nautilus: 'Nautilus';
 
 
+@font-face {
+  font-family: 'Nautilus';
+  src: url('../fonts/Nautilus/Nautilus.eot');
+  src: local('☺'), url('../fonts/Nautilus/Nautilus.woff')
+  format('woff'), url('../fonts/Nautilus/Nautilus.ttf')
+  format('truetype'), url('../fonts/Nautilus/Nautilus.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face {
   font-family: 'MuseoSansThin';
   src: url('../fonts/MuseoSans/MuseoSansThin.eot');

@@ -1,14 +1,41 @@
 $(document).ready(function () {
+
     lightbox.option({
         'resizeDuration': 200,
         'wrapAround': true,
         'disableScrolling': true
     });
-    $('.owl-carousel').owlCarousel({
-        margin:10,
-        loop:true,
-        autoWidth:true,
-        items:4,
-        autoplay: true,
-    })
+
+    $('.slide-one').owlCarousel({
+        margin: 10,
+        loop: true,
+        autoWidth: true,
+        items: 4,
+        nav: true,
+        dots: true,
+        autoplay: true
+    });
+
+    $(window).load(function() {
+        // The slider being synced must be initialized first
+        $('#carousel').flexslider({
+            animation: "slide",
+            controlNav: true,
+            animationLoop: true,
+            slideshow: false,
+            itemWidth: 63,
+            directionNav: true,
+            itemMargin: 35,
+            asNavFor: '#slider'
+        });
+        $('#slider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,
+            animationLoop: false,
+            slideshow: false,
+            sync: "#carousel"
+        });
+    });
 });
+
