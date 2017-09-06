@@ -24,14 +24,14 @@ $(document).ready(function () {
             animationLoop: true,
             slideshow: false,
             itemWidth: 63,
-            directionNav: true,
+            directionNav: false,
             itemMargin: 35,
             asNavFor: '#slider'
         });
         $('#slider').flexslider({
             animation: "slide",
             controlNav: false,
-            directionNav: false,
+            directionNav: true,
             animationLoop: false,
             slideshow: false,
             sync: "#carousel"

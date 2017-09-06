@@ -85,11 +85,9 @@
             width: 63px;
             height: 63px;
             top:0;
-            left: 0;
             background: rgba(238, 202, 0, .5);
             border-radius: 50%;
         }
-
       }
     }
     .flex-direction-nav .flex-disabled {
@@ -98,5 +96,10 @@
       cursor: default;
       z-index: 1;
     }
+    .flex-nav-prev .flex-prev, .flex-next {
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"!important;
+      opacity: 1!important;
+    }
+
   }
 }
