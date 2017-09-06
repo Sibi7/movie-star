@@ -97,17 +97,42 @@
     box-sizing: border-box;
     color: #000;
     transition: 200ms ease;
-    &:hover{
-      color: #fff;
-      transition: 200ms ease;
+
+    a{
+      color: #000;
     }
     span{
       font-size: 16px;
     }
     .fa{
-      color: #000;
       margin-right: 10px;
       display: inline-block;
+    }
+    ul{
+      display: none;
+      position: absolute;
+      margin: 10px 0 0 0;
+      width: 200px;
+      padding: 20%;
+      list-style: none;
+      z-index: 2;
+      text-align: left;
+      background: #edc900;
+      right: 0;
+      li{
+        display: block;
+        width: 100%;
+
+        a{
+          color: #000;
+          line-height: 40px;
+          display: block;
+          &:hover{
+            color: #fff;
+            transition: 200ms ease;
+          }
+        }
+      }
     }
   }
   &__content{

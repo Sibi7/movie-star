@@ -37,5 +37,10 @@ $(document).ready(function () {
             sync: "#carousel"
         });
     });
+//    menu header
+    $( ".menu-link" ).click(function() {
+        $( ".header__menu ul" ).slideToggle( "slow", function() {
+        });
+    });
 });
 
