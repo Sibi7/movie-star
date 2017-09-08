@@ -13,6 +13,16 @@ $(document).ready(function () {
         items: 4,
         nav: true,
         dots: true,
+        navText: ["<i class='fa fa-3x fa-chevron-left'></i>","<i class='fa fa-3x fa-chevron-right'></i>"],
+        autoplay: true
+    });
+    $('.form-slide').owlCarousel({
+        margin: 0,
+        loop: true,
+        items: 1,
+        nav: false,
+        autoplayTimeout:7000,
+        dots: false,
         autoplay: true
     });
 

@@ -1,47 +1,88 @@
-.portfolio{
+.portfolio {
   display: block;
   position: relative;
   float: left;
   width: 100%;
-  h1{
+  h1 {
     color: #09091e;
     font-family: $MuSeoSansBlack;
     font-size: 35px;
     margin-top: 50px;
     margin-bottom: 39px;
   }
-  &__wrapper{
+  .owl-nav {
+    position: relative;
+    width: 200px;
+    transition: 300ms ease;
+    margin: 30px auto 0 auto;
+    top: 0;
+    .owl-prev {
+      position: relative;
+      float: left;
+      text-align: center;
+      height: 80px;
+      width: 80px;
+      background: rgba(0, 0, 0, 0.5);
+      transition: 300ms ease;
+      .fa-chevron-left {
+        display: inline-block;
+        color: #fff;
+        margin-top: 18px;
+      }
+      &:hover{
+        background: rgba(0, 0, 0, 0.7);
+      }
+    }
+    .owl-next {
+      position: relative;
+      height: 80px;
+      width: 80px;
+      float: right;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      transition: 300ms ease;
+      .fa-chevron-right {
+        display: inline-block;
+        color: #fff;
+        margin-top: 18px;
+      }
+      &:hover{
+        background: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+  &__wrapper {
     display: block;
     position: relative;
     float: left;
     text-align: center;
     margin-bottom: 80px;
     width: 100%;
-
-    &__item{
+    &__item {
       display: block;
       overflow: hidden;
       position: relative;
       float: left;
       height: 388px;
       transition: 200ms ease;
-      img{
+      img {
         object-fit: cover;
         width: 100%;
-        padding: 10px 10px;
+        padding: 10px 10px ;
         box-sizing: border-box;
         transition: 200ms ease;
         height: 100%;
-        &:hover{
+        &:hover {
           transform: scale(1.03);
           transition: 200ms ease;
         }
       }
     }
-    button{
+    button {
       width: 287px;
       height: 57px;
       display: inline-block;
+      margin-top: 40px;
       border-radius: 10px;
       border: 2px solid transparent;
       background-color: #edc900;
@@ -49,7 +90,6 @@
       font-family: $MuSeoSansBold;
       font-size: 17px;
       margin-right: 18px;
-      margin-top: 59px;
       &:hover {
         transform: none;
         background: #fff;

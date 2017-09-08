@@ -19,7 +19,8 @@
   &__menu{
     display: block;
     position: relative;
-    float: right;
+    float: left;
+    margin-left: 40px;
     margin-top: 57px;
     ul{
       margin: 0;
@@ -38,6 +39,37 @@
             color: #edc900;
           }
         }
+      }
+    }
+  }
+  &__social{
+    display: block;
+    position: relative;
+    float: right;
+    width: auto;
+    margin-top: 50px;
+    a{
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      background: #000;
+      border-radius: 50%;
+      text-align: center;
+      margin-left: 18px;
+      color: #fff;
+      float: left;
+      transition: 200ms ease;
+      &:hover{
+        transform: scale(1.1);
+        transition: 200ms ease;
+        background: #edc900;
+        color: #fff;
+      }
+      &:first-child{
+        margin-left: 0;
+      }
+      .fa{
+        padding: 6px 0;
       }
     }
   }
