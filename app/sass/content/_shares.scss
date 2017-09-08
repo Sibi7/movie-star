@@ -13,6 +13,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
     &__item {
       width: 328px;
@@ -73,6 +74,42 @@
       &:hover img {
         transform: scale(1.1);
         transition: 200ms ease;
+      }
+    }
+    &--photo{
+      display: block;
+      position: relative;
+      float: left;
+      width: 356px;
+      height: 353px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      img{
+        size: 100%;
+        object-fit: cover;
+        @include transition(0.4s);
+      }
+    }
+    &--photo:hover{
+      img{
+        @include transition(0.4s);
+        transform: scale(0.9);
+      }
+    }
+    &--more{
+      width: 244px;
+      height: 60px;
+      border-radius: 10px;
+      background-color: #edc900;
+      font-weight: 500;
+      color: #000000;
+      display: block;
+      border: 0;
+      margin-top: 71px;
+      margin-bottom: 53px;
+      margin-left: calc(50% - (244px/2));
+      &:hover{
+        color: #fff;
       }
     }
   }
