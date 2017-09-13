@@ -1,10 +1,10 @@
-.heirstyles{
+.heirstyles {
   display: block;
   position: relative;
   float: left;
   width: 100%;
   background-color: #f2f2f2;
-  &__box{
+  &__box {
     display: block;
     position: relative;
     float: left;
@@ -12,7 +12,7 @@
     background-color: white;
     margin-top: 46px;
     margin-bottom: 63px;
-    h3{
+    h3 {
       position: relative;
       width: 100%;
       margin-top: 50px;
@@ -23,18 +23,18 @@
       padding-left: 44px;
       @include box-sizing(border-box);
     }
-    &--descr{
+    &--descr {
       display: block;
       position: relative;
       float: left;
       width: calc(100% - 469px);
-      .shares__buttons{
+      .shares__buttons {
         margin-bottom: 0;
         margin-top: 16px;
         justify-content: space-around;
       }
     }
-    &--element{
+    &--element {
       display: block;
       position: relative;
       float: left;
@@ -42,37 +42,50 @@
       padding-left: 43px;
       padding-right: 58px;
       @include box-sizing(border-box);
-      > p{
+      > p {
         display: block;
         position: relative;
         float: left;
         width: 50%;
         margin: 22px 0;
-        &:first-of-type{
+        &:first-of-type {
           color: #09091e;
           font-family: $MuSeoSansRegular;
           font-size: 20px;
           font-weight: 400;
+          padding-left: 10px;
+          @include box-sizing(border-box);
+          &:before {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: #edc900;
+            border-radius: 50%;
+            top: 8px;
+            left: 0;
+          }
         }
-        &:nth-of-type(2){
+        &:nth-of-type(2) {
           text-align: right;
           color: #09091e;
           font-family: $MuSeoSansRegular;
           font-size: 20px;
-          span{
+          span {
             font-size: 28px;
           }
         }
       }
     }
-    &--photo{
+    &--photo {
       display: block;
       position: relative;
       float: left;
       width: 469px;
       height: 564px;
       overflow: hidden;
-      img{
+      img {
         size: 100%;
         object-fit: cover;
       }
