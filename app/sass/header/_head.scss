@@ -196,7 +196,7 @@
     position: absolute;
     width: 50%;
     right: 0;
-    bottom: 0;
+    margin-top: 177px;
     > h3{
       display: block;
       position: relative;
@@ -204,6 +204,38 @@
       width: 100%;
       margin-top: 62px;
       margin-bottom: 35px;
+      padding-left: 61px;
+      @include box-sizing(border-box);
+      color: black;
+      font-family: $MuSeoSansBlack;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    > p{
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 31px;
+      padding-left: 94px;
+      @include box-sizing(border-box);
+      font-family: $MuSeoSansThin;
+      color: #080808;
+      font-size: 25px;
+      &:before{
+        display: block;
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: 25px;
+        top: 2px;
+        margin-left: -33px;
+        background-image: url('../img/icons/yel-arr-right-icon.png');
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }
     }
   }
 }
