@@ -179,3 +179,31 @@
 .header.header-heirstyler{
   background: url("../img/heirstyles-bg.png") no-repeat center center;
 }
+.header-heirstyler{
+  &__title{
+    display: block;
+    position: absolute;
+    max-width: 668px;
+    color: #efc200;
+    font-family: $MuSeoSansBold;
+    font-size: 72px!important;
+    text-transform: uppercase;
+    margin-top: 109px!important;
+    right: 115px;
+  }
+  &__descr{
+    display: block;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    bottom: 0;
+    > h3{
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+      margin-top: 62px;
+      margin-bottom: 35px;
+    }
+  }
+}
