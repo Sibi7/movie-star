@@ -28,12 +28,60 @@
 ?><!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=1170">
+    <meta name="format-detection" content="telephone=no">
 
-<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 
 <body>
+<header class="header">
+    <!--<video width="100%" height="614px" preload="auto" autoplay="autoplay"-->
+    <!--loop="loop" poster="img/header-slide.jpg">-->
+    <!--<source src="video/bg2.mp4" type="video/mp4"></source>-->
+    <!--</video>-->
+    <div class="container">
+        <div class="header__logo">
+            <a href="/">
+                <img src="<?php bloginfo('template_directory'); ?>/img/header-logo.png" alt="">
+            </a>
+        </div>
+        <div class="header__menu">
+            <a href="#" class="menu-link">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <span>меню</span>
+            </a>
+
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#go_portfolio" class="SmothtoScroll">Портфолио</a></li>
+                <li><a href="#go_services" class="SmothtoScroll">Услуги</a></li>
+                <li><a href="#go_shares" class="SmothtoScroll">Акции</a></li>
+                <li><a href="http://movie-star/wigs/">Парики</a></li>
+                <li><a href="#go_contacts" class="SmothtoScroll">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="header__contacts">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>Самара, пр-т Масленникова, д.8</span>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <a href="tel:846 334-07-33">(846) 334-07-33</a>
+        </div>
+
+        <div class="header__social">
+            <a href="http://vk.com" target="_blank">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="http://instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="header__content">
+            <h1>Салон красоты Кинозвезда</h1>
+            <h2>делаем Вас красивыми уже 17 лет</h2>
+            <button>Онлайн запись</button>
+        </div>
+    </div>
+</header>
 

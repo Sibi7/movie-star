@@ -62,7 +62,9 @@ function artcraft_scripts() {
      * 2) путь к файлу
      */
     // для локальных стилей
-	wp_enqueue_style( 'artcraft-style', get_stylesheet_uri() . '/css/style.css' );
+	wp_enqueue_style( 'moviestar-favicons', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'moviesta-libs', get_template_directory_uri() . '/css/libs.min.css' );
+	wp_enqueue_style( 'moviesta-style', get_template_directory_uri() . '/css/styles.min.css' );
     // для внешних стилей
 	//wp_enqueue_style( 'artcraft-style', 'http://domain.com/style.css' );
     /*
@@ -74,7 +76,12 @@ function artcraft_scripts() {
      * 4) версия (оставляем пустые кавычки)
      * 5) подключение в футере (true = да, false = нет)
      */
-	wp_enqueue_script( 'artcraft-script', get_template_directory_uri() . '/js/script.js', [], '', true );
+	wp_enqueue_script( 'moviesta-jquery', get_template_directory_uri() . '/js/jquery-2.1.3.min.js', [], '', true );
+	wp_enqueue_script( 'moviesta-lightbox', get_template_directory_uri() . '/js/lightbox-plus-jquery.min.js', [], '', true );
+	wp_enqueue_script( 'moviesta-owl', get_template_directory_uri() . '/js/owl.carousel.min.js', [], '', true );
+	wp_enqueue_script( 'moviesta-flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', [], '', true );
+	wp_enqueue_script( 'moviesta-fancybox', get_template_directory_uri() . '/js/jquery.fancybox.js', [], '', true );
+	wp_enqueue_script( 'moviesta-script', get_template_directory_uri() . '/js/script.min.js', [], '', true );
     /*
      * Добавляем возможность отправлять AJAX-запросы к скриптам
      * Аргументы:
