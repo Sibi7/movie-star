@@ -18,7 +18,7 @@
 
             <h1>Наши услуги</h1>
 
-            <a href="wigs.html" class="services__wrapper__big-item">
+            <a href="http://movie-star/wigs/" class="services__wrapper__big-item">
                 <img src="<?php bloginfo('template_directory'); ?>/img/services/1.jpg" alt="">
                 <ul>
                     <li><span>Продажа париков</span></li>
@@ -39,7 +39,7 @@
                 </ul>
             </a>
 
-            <a href="training.html" class="services__wrapper__item">
+            <a href="http://movie-star/tarining/" class="services__wrapper__item">
                 <img src="<?php bloginfo('template_directory'); ?>/img/services/4.jpg" alt="">
                 <ul>
                     <li><span>Обучение для мастеров</span></li>
